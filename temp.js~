@@ -34,9 +34,7 @@ var grid = clickableGrid(4, 4, function(el, row, col, i) {
   lastClicked = el;
 });
 
-
-var divContainer = document.getElementById('grid');
-divContainer.appendChild(grid);
+document.body.appendChild(grid);
 
 function checkGrid() {
   var t = 0;
